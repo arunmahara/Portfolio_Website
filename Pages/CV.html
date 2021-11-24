@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<!-- Creating head section -->
+<head>	
+	<!--creating meta elements-->
+	<meta name="description" content="Portfolio"/>
+	<meta name="keywords" content="HTML,CSS">
+	<meta name="author" content="Arun Mahara">
+	<!--meta http-equiv="refresh" content="2" /-->
+    <!--end of meta elements-->
+    <!--linking external css-->
+	<link rel="stylesheet" type="text/css" href="../css/Style.css" />
+	<title>CV</title>
+	<style type="text/css">/* Internal css */
+	.top{
+		font-family: Vivaldi;
+		color: #590000;
+		text-align: center;
+		letter-spacing: 9px;
+		margin-top:20px;
+		font-size: 35px;
+	}
+	.intro{
+		font-family: Californian FB;
+		text-align: center;
+		margin-top: 15px;
+		margin-left: 10px;
+		margin-right: 20px;
+		font-size: 20px;
+		color: white;
+	}
+	.icon{
+		text-align: center;
+		margin-top: 5px;
+		}
+	.icon img{
+		transition: transform 1s;
+	}
+	.icon a:hover img{
+		transform: scale(1.2);
+	}
+	h2{
+		font-family: Californian FB;
+		text-align: center;
+		margin-top: 63px;
+		color: #590000;
+	}
+	table{
+		border-collapse: collapse;
+		padding: 5px;
+		margin-top: 40px;
+		margin-left: 20px;
+	    text-align: center;
+		font-family:Californian FB;
+		color: #590000;
+		width:97%;
+	}
+	th{
+		background-color: #590000;
+	}
+	td{
+		background-color: #0001; 
+	}
+	th,td{
+		border:	0px;
+		padding: 15px;
+	}
+	</style>
+</head>
+<!--end of head secton-->
+<!--creating body section-->
+<body bgcolor="#6e7d7b">
+	<!--creating navigation bar-->
+	<nav>
+		<div class="logo">
+			<a href="../Index.html"><h3>arun</h3></a>
+		</div>
+		<!--Creating unordered list of web pages-->
+		<ul class="nav-links">
+			<li>
+				<a href="../Index.html">Home</a>
+			</li>
+            <li>
+            	<a class="current" href="CV.html">CV</a>
+            </li>
+            <li>
+            	<a href="Blog.html">Blog</a>
+            </li>
+            <li>
+            	<a href="Research.html">Research</a>
+            </li>
+            <li>
+            	<a href="Contact.html">Contact</a>
+            </li>
+        </ul>
+        <!-- end of unordered list--> 
+    </nav>
+    <!--end of navigation section--> 
+    <!-- creating a main section -->
+    <main style="width: 100%;height: 117vh;">
+    	<!-- creating a division for  image -->
+    	<div style="background-image: url(../Images/me.png); width: 25%; height:53vh; margin-top: 30px; float:right; background-size: 100% 100%; background-position: center;">
+    	</div></br>
+		<!-- closing div for image -->
+		<!-- creating a division for text -->
+		<div class="top">
+			<h1>Namaste</h1>
+		</div>
+		<div style="font-family: Bell MT; color: #590000; text-align: center; letter-spacing: 5px; margin-top: 28px; font-size: 50px;">Myself Arun Mahara</div>
+		<p class="intro">I'm a student at Islington College studying Bsc (Hons) Computing.  I am a web designer and programmer. I like making paintings, sketching very much. I have a passion for web design and love to create for web. For any related work fell free to contact me.</p>
+		<p style="text-align: center; margin-top: 40px; color: #590000;"> Follow on</p>
+		<!-- adding social media icons --> 
+		<div class="icon">
+			<a href="https://www.facebook.com/arunmahara124/" target="blank">
+				<img src="../Images/facebook.PNG" height="20"/></a>
+				<a href="https://www.instagram.com/arun_mahara/" target="another blank">
+				<img src="../Images/instagram.PNG" height="20"/></a>
+		</div>
+		<!-- end of division for text -->
+		<h2>Educational Background</h2>
+		<!-- creating table -->
+		<table>
+			<tr>
+				<th><font color="white">LEVEL</font></th>
+                <th><font color="white">FACULTY</font></th>
+                <th><font color="white">SCHOOL/COLLEGE</font></th>
+                <th><font color="white">BOARD</font></th>
+            </tr>
+            <tr align="center">
+            	<td>Secondary School</td>
+                <td>----</td>
+                <td>Deepshikha S.B.School</td>
+                <td>National Examination Board</td>
+            </tr>
+            <tr align="center">
+            	<td>HighSchool</td>
+                <td>Science </td>
+                <td>Padmodaya Model Public College</td>
+                <td>National Examination Board</td>
+            </tr>
+            <tr align="center">
+            	<td>Bachelor</td>
+                <td>Bsc (Hons) Computing</td>
+                <td>Islington College</td>
+                <td>London Metropolitan University</td>
+            </tr>
+        </table> </br>
+        <!-- end of table -->
+        <!--creating footer section-->
+        <footer style="background-color: #0001; height:auto; width: 100%; text-align: center;">
+        	<h5>Copyright &copy; 2020 Arun Mahara</h5>
+			<h5>Powered by <a style="text-decoration: none; color: #e67e22;" href="https://awarself.business.site/" target="_blank"> awarself</a></h5>
+		</footer>
+		<!-- end of footer section -->
+	</main>
+	<!-- end of main section-->
+</body>
+<!-- end of body section -->
+</html>

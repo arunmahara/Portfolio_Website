@@ -1,0 +1,94 @@
+/*External CSS*/
+/*navigation section*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*for designing navigation bar*/
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 9vh;
+	background-color: #0001;
+	font-size: 18px;
+}
+/*for designing text in navigation bar*/
+.logo{
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-size: 19px;
+	font-weight: bolder;
+
+}
+.logo a{
+	color: white;
+	text-decoration: none;
+}
+.logo a:hover{
+	color: #218c74; 
+
+}
+.nav-links{
+	display: flex;
+	width: 35%;
+	justify-content: space-around;
+}
+.nav-links li{
+	list-style: none;
+}
+.nav-links a{
+	color: white;
+	text-decoration: none;
+	letter-spacing:2px;
+	font-weight: bolder;
+	font-size: 13px;
+}
+.nav-links a:hover{
+	color: #218c74;
+}
+.nav-links .current{
+	color: #218c74;
+}
+/*text section*/
+/*for text of mid section*/
+.mid{
+	color: #95a5a6;
+	font-family: Vivaldi;
+	font-size: 63px;
+	letter-spacing: 11px;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 30%;
+	left: 50%;
+	text-align: center;
+}
+.wlc{
+	color: #218c74;
+    font-size: 35px;
+    letter-spacing: 0px;
+	font-family: Bell MT;
+}
+.art{
+	color: black;
+	font-family: Bell MT;
+	font-size: 45px;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 95vh;
+	left: 50%;
+	text-align: center;
+
+}
+
+
+
+
+
+	
+
+
+
+
+      
+

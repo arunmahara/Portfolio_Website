@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<!--creating head section-->
+<head>
+    <title>Home Page</title>
+    <!--creating meta elements-->
+	<meta name="description" content="Portfolio"/>
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Arun Mahara">
+	<!--meta http-equiv="refresh" content="2" /-->
+    <!--end of meta elements-->
+    <!--linking external css-->
+    <link rel="stylesheet" type="text/css" href="css/Style.css" />
+    <style type="text/css">/*Internal css*/
+    .slider {
+      
+      height: 600px;
+      margin-top: 580px;
+      margin-left: 70px;
+      margin-right: 70px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    img 
+    {
+      width: 50%;
+      height: 100%;
+      margin-left: 300px;
+      size: 100% 100%;
+    }
+    </style>
+</head>
+<!--end of head section-->
+<!--creating body section-->
+<body style="background-image: url(Images/buddha1.jpg);  background-size:cover; background-position: center;  width: 100%; height: 90vh; background-repeat: no-repeat; background-color: silver">
+    <!--crearing navigation section-->
+    <nav>
+        <div class="logo">
+            <a href="Index.html"><h3>arun</h3></a>
+		</div>
+        <!--Creating unordered list of web pages-->
+		<ul class="nav-links">
+			<li>
+                <a class="current" href="Index.html">Home</a>
+			</li>
+            <li>
+            	<a href="Pages/CV.html">CV</a>
+            </li>
+            <li>
+            	<a href="Pages/Blog.html">Blog</a>
+            </li>
+            <li>
+            	<a href="Pages/Research.html">Research</a>
+            </li>
+            <li>
+            	<a href="Pages/Contact.html">Contact </a>
+            </li>
+        </ul>
+        <!-- end of unordered list--> 
+    </nav>
+    <!--end of navigation section-->
+    <!--creating main section-->
+    <main style="width: 100%;height: 83vh;">
+      <!--creating division for text-->
+      <div class="mid">
+        <h1> Namaste </h1>
+        <div class="wlc">
+        <h6>Web Design | Portfolio | Art Gallery</h6>
+        </div>
+      </div>
+      <!--end of division for text-->
+      <p class="art">Art Gallery</p>
+      <!--creating division for slideshow of image-->
+      <div class="slider">
+      <!--creating division for image-->
+      <div id="img">
+        <img src="Images/A5.jpg">
+      </div>
+      <!--end of division for image-->
+      </div>
+      <!--end of division for slideshow of image-->
+  <!--adding java script for slideshow-->
+  <script>
+    var images = ['Images/A1.jpg', 'Images/A2.jpg', 'Images/A3.jpg', 'Images/A4.jpg', 'Images/A5.jpg'];
+    var x = 0;
+    var imgs = document.getElementById('img');
+    setInterval(slider, 3000);
+    function slider() {
+      if (x < images.length){
+        x = x + 1;
+      } else {
+        x = 1;
+      }
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    }
+  </script>
+  <!--end of java script for slidehow-->
+  <!--creating footer-->
+  <footer style="background-color: #0001; height:auto; width: 100%; margin-top: 5px; text-align: center;">
+  <h5>Copyright &copy; 2020 Arun Mahara</h5>
+    <h5>Powered by <a style="text-decoration: none; color: #e67e22;" href="https://awarself.business.site/" target="_blank"> awarself</a></h5>
+</footer>
+<!--end of footer-->
+</main>
+<!--end of main section-->
+</body>
+<!--end of body section-->
+</html>

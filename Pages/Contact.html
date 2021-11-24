@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<!--creating head section-->
+<head>
+  <title>Contact</title>
+	<!--creating meta elements-->
+	<meta name="description" content="Portfolio"/>
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="author" content="Arun Mahara">
+	<!--meta http-equiv="refresh" content="2" /-->
+  <!--end of meta elements-->
+  <!--linking external css-->
+	<link rel="stylesheet" type="text/css" href="../css/Style.css" />
+	<style type="text/css">/*Internal css*/
+	.form{
+		text-align: center;
+		margin-top: 20px;
+		font-family: Californian FB;
+		font-size: 17px;
+		}
+	input{
+    width: 25%;
+    margin: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: orange;
+    text-align: center;
+  }
+  .reach{
+    text-align: center;
+    margin-top: 14px;
+  }
+  </style>
+<!--creating body section-->
+<body style="background-image: url(../Images/Frozen2.jpg); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+  <!--creating navigation section-->
+  <nav>
+    <div class="logo">
+      <a href="../Index.html"><h3>arun</h3></a>
+		</div>
+    <!--Creating unordered list of web pages-->
+    <ul class="nav-links">
+			<li>
+        <a href="../Index.html">Home</a>
+			</li>
+      <li>
+        <a href="CV.html">CV</a>
+      </li>
+      <li>
+        <a href="Blog.html">Blog</a>
+      </li>
+      <li>
+        <a href="Research.html">Research</a>
+      </li>
+      <li>
+        <a class="current" href="Contact.html">Contact </a>
+      </li>
+      </ul>
+      <!-- end of unordered list--> 
+    </nav>
+    <!--end of navigation section-->
+    <!--creating main section-->
+    <main style="width: 100%;height: 125vh;">
+      <p style="font-family: Californian FB; text-align: center; font-size: 30px; color: white; margin-top: 20px;"> Contact Me</p>
+      <!--creating division for form-->
+      <div class="form">
+        <!-- creating form -->
+        <form name="contactform" onsubmit="formValidation()">
+          <p>First Name</p>
+          <br>
+          <input type="text" name="fname" placeholder="Enter your first name">
+          <br>
+          <br>
+          <p>Last Name</p>
+          <br>
+          <input type="text" name="lname" placeholder="Enter your last name">
+          <br>
+          <br>
+          <p>Contact no.</p>
+          <br>
+          <input type="text" name="contact" placeholder="Enter your contact no.">
+          <br>
+          <br>
+          <p>Email Id</p>
+          <br>
+          <input type="text" name="email" placeholder="Enter your email address">
+          <br>
+          <br>
+          <p>Message</p>
+          <br>
+          <textarea name="message" rows="12" cols="70" placeholder="Enter your message here" ></textarea>
+          <br>
+          <br>
+          <input type="Submit" value="Submit" style=" border: solid; color: black; width: 100px; height: 35px;">
+        </form>
+        <!-- end of form-->
+      </div>
+      <!--end of division for form-->
+      <!--creating java script-->
+      <script>
+        function formValidation(){
+          var fname = document.forms["contactform"]["fname"].value;
+          var lname = document.forms["contactform"]["lname"].value;
+          var contact = document.forms["contactform"]["contact"].value;
+          var email = document.forms["contactform"]["email"].value;
+          var message = document.forms["contactform"]["message"].value;
+          if(fname == "" || lname == "" || contact == "" || email == "" || message == ""){
+            alert("Please fill all the form.");
+          }
+          else{
+            alert("Message has been send.");
+          }
+        }
+      </script>
+      <!--end of java script-->
+      <!--creating division for contact-->
+      <div class="reach">
+        <p style="font-size: 21px; margin-bottom: 7px; color: white;"> Contact on: </p>
+        <p><img style="width: 1%; height:1%;" src="../Images/phone.png">  9867481045  </p>
+        <p><img style="width: 1%; height:1%;" src="../Images/mail.png">  arunmahara124@gmail.com</p>
+      </div>
+      <br>
+      <!-- end of division for contact-->
+      <!--creating footer section-->
+      <footer style="background-color: #0001; height:auto; width: 100%; text-align: center;">
+        <h5>Copyright &copy; 2020 Arun Mahara</h5>
+        <h5>Powered by <a style="text-decoration: none; color: #e67e22;" href="https://awarself.business.site/" target="_blank"> awarself</a></h5>
+      </footer>
+      <!--end of footer of section-->
+  </main>
+  <!--end of main section-->
+</body>
+<!--end of body section-->
+</html>
